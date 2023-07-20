@@ -1,6 +1,7 @@
 package de.answed.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import de.answed.tutorialmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -41,8 +42,13 @@ public class TutorialMod
     public TutorialMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        //Ensures that the Items are actually added to the game
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
+
         MinecraftForge.EVENT_BUS.register(this);
+
         modEventBus.addListener(this::addCreative);
     }
 
@@ -50,7 +56,10 @@ public class TutorialMod
 
     }
     private void addCreative(BuildCreativeModeTabContentsEvent event){
-
+        //Adds the item to one of the Creative Menu tabs. In this case to Ingredients
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.SAPPHIRE);
+        }
     }
 
     public void onServerStarting(ServerStartingEvent event){
