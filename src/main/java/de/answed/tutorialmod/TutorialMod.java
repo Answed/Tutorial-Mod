@@ -59,6 +59,7 @@ public class TutorialMod
         //Adds the item to one of the Creative Menu tabs. In this case to Ingredients
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.RAW_SAPPHIRE);
         }
     }
 
