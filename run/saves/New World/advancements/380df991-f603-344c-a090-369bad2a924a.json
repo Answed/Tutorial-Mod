@@ -71,15 +71,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2023-07-21 12:36:08 +0200"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/campfire": {
     "criteria": {
       "has_coal": "2023-07-21 12:36:16 +0200"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/smoker": {
+  "minecraft:recipes/building_blocks/coal_block": {
     "criteria": {
-      "has_furnace": "2023-07-21 12:36:08 +0200"
+      "has_coal": "2023-07-21 12:36:16 +0200"
     },
     "done": true
   },
@@ -89,9 +95,21 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/coal_block": {
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
     "criteria": {
-      "has_coal": "2023-07-21 12:36:16 +0200"
+      "has_iron_pickaxe": "2023-07-21 14:03:54 +0200"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2023-07-21 14:03:54 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_pickaxe": "2023-07-21 14:03:54 +0200"
     },
     "done": true
   },
