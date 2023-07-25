@@ -2,6 +2,7 @@
   "values": [
     "tutorialmod:sapphire_block",
     "tutorialmod:raw_sapphire_block",
-    "tutorialmod:sapphire_ore"
+    "tutorialmod:sapphire_ore",
+    "tutorialmod:sound_block"
   ]
 }
