@@ -1,6 +1,7 @@
 package de.answed.tutorialmod.block;
 
 import de.answed.tutorialmod.TutorialMod;
+import de.answed.tutorialmod.block.custom.SoundBlock;
 import de.answed.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -33,7 +34,7 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NOTE_BLOCK)));
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.NOTE_BLOCK)));
 
 
     private static <T extends  Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
