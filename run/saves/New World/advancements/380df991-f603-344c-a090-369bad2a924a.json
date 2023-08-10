@@ -131,5 +131,47 @@
     },
     "done": true
   },
+  "tutorialmod:recipes/misc/sapphire": {
+    "criteria": {
+      "has_sapphire_block": "2023-08-10 18:16:44 +0200"
+    },
+    "done": true
+  },
+  "tutorialmod:recipes/misc/sapphire_from_blasting_sapphire_ore": {
+    "criteria": {
+      "has_sapphire_ore": "2023-08-10 18:16:58 +0200"
+    },
+    "done": true
+  },
+  "tutorialmod:recipes/misc/sapphire_from_smelting_sapphire_ore": {
+    "criteria": {
+      "has_sapphire_ore": "2023-08-10 18:16:58 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cake": {
+    "criteria": {
+      "has_egg": "2023-08-10 18:21:19 +0200"
+    },
+    "done": true
+  },
+  "tutorialmod:recipes/misc/sapphire_from_smelting_raw_sapphire": {
+    "criteria": {
+      "has_raw_sapphire": "2023-08-10 18:21:31 +0200"
+    },
+    "done": true
+  },
+  "tutorialmod:recipes/misc/sapphire_from_blasting_raw_sapphire": {
+    "criteria": {
+      "has_raw_sapphire": "2023-08-10 18:21:31 +0200"
+    },
+    "done": true
+  },
+  "tutorialmod:recipes/misc/sapphire_block": {
+    "criteria": {
+      "has_sapphire": "2023-08-10 18:21:38 +0200"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

@@ -9,19 +9,20 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockStateProvider extends BlockStateProvider {
-    public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper){
+    public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, TutorialMod.MODID, exFileHelper);
     }
 
     @Override
-    protected void registerStatesAndModels(){
-        blockWithItem(ModBlocks.SAPPHIRE_ORE);
+    protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
         blockWithItem(ModBlocks.RAW_SAPPHIRE_BLOCK);
-        blockWithItem((ModBlocks.SOUND_BLOCK));
+
+        blockWithItem(ModBlocks.SAPPHIRE_ORE);
+        blockWithItem(ModBlocks.SOUND_BLOCK);
     }
 
-    private void blockWithItem(RegistryObject<Block> blockRegistryObject){
-        simpleBlockItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 }
