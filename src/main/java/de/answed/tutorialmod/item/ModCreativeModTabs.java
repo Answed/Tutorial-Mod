@@ -22,6 +22,12 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.STRAWBERRY.get());
                         pOutput.accept(ModItems.PINE_CONE.get());
+                        pOutput.accept(ModItems.BIG_ASS_SWORD.get());
+                        pOutput.accept(ModItems.ALEXANDRITE_AXE.get());
+                        pOutput.accept(ModItems.ALEXANDRITE_PICKAXE.get());
+                        pOutput.accept(ModItems.ALEXANDRITE_SWORD.get());
+                        pOutput.accept(ModItems.ALEXANDRITE_SHOVEL.get());
+                        pOutput.accept(ModItems.ALEXANDRITE_HOE.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());

@@ -3,7 +3,7 @@ package de.answed.tutorialmod.item;
 import de.answed.tutorialmod.TutorialMod;
 import de.answed.tutorialmod.item.custom.FuelItem;
 import de.answed.tutorialmod.item.custom.MetalDetectorItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -25,6 +25,20 @@ public class ModItems {
 
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
             () -> new FuelItem(new Item.Properties(), 400));
+
+    public static final RegistryObject<Item> ALEXANDRITE_SWORD = ITEMS.register("alexandrite_sword",
+            () -> new SwordItem(ModToolTiers.ALEXANDRITE,2,3  ,new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> BIG_ASS_SWORD = ITEMS.register("big_ass_sword",
+            () -> new SwordItem(ModToolTiers.ALEXANDRITE,16,-3.5f  ,new Item.Properties().durability(2000)));
+    public static final RegistryObject<Item> ALEXANDRITE_PICKAXE = ITEMS.register("alexandrite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.ALEXANDRITE,2,3  ,new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ALEXANDRITE_AXE = ITEMS.register("alexandrite_axe",
+            () -> new AxeItem(ModToolTiers.ALEXANDRITE,2,3  ,new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ALEXANDRITE_SHOVEL = ITEMS.register("alexandrite_shovel",
+            () -> new ShovelItem(ModToolTiers.ALEXANDRITE,2,3  ,new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ALEXANDRITE_HOE = ITEMS.register("alexandrite_hoe",
+            () -> new HoeItem(ModToolTiers.ALEXANDRITE,2,3  ,new Item.Properties().durability(256)));
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
