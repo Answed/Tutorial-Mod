@@ -1,6 +1,7 @@
 package de.answed.tutorialmod.item;
 
 import de.answed.tutorialmod.TutorialMod;
+import de.answed.tutorialmod.item.custom.BigAssSword;
 import de.answed.tutorialmod.item.custom.FuelItem;
 import de.answed.tutorialmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.*;
@@ -29,7 +30,7 @@ public class ModItems {
     public static final RegistryObject<Item> ALEXANDRITE_SWORD = ITEMS.register("alexandrite_sword",
             () -> new SwordItem(ModToolTiers.ALEXANDRITE,2,3  ,new Item.Properties().durability(256)));
     public static final RegistryObject<Item> BIG_ASS_SWORD = ITEMS.register("big_ass_sword",
-            () -> new SwordItem(ModToolTiers.ALEXANDRITE,16,-3.5f  ,new Item.Properties().durability(2000)));
+            () -> new BigAssSword(ModToolTiers.ALEXANDRITE,16,-3.5f  ,new Item.Properties().durability(2000)));
     public static final RegistryObject<Item> ALEXANDRITE_PICKAXE = ITEMS.register("alexandrite_pickaxe",
             () -> new PickaxeItem(ModToolTiers.ALEXANDRITE,2,3  ,new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ALEXANDRITE_AXE = ITEMS.register("alexandrite_axe",
