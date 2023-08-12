@@ -3,6 +3,8 @@
     "tutorialmod:sapphire_ore",
     "tutorialmod:sapphire_block",
     "tutorialmod:raw_sapphire_block",
-    "tutorialmod:sound_block"
+    "tutorialmod:sound_block",
+    "tutorialmod:sapphire_stairs",
+    "tutorialmod:sapphire_slab"
   ]
 }

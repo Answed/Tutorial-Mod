@@ -26,12 +26,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.SAPPHIRE_BLOCK.get(),
-                        ModBlocks.RAW_SAPPHIRE_BLOCK.get(), ModBlocks.SOUND_BLOCK.get());
+                        ModBlocks.RAW_SAPPHIRE_BLOCK.get(), ModBlocks.SOUND_BLOCK.get(),
+                        ModBlocks.SAPPHIRE_STAIRS.get(), ModBlocks.SAPPHIRE_SLAB.get());
+
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SAPPHIRE_ORE.get()).addTag(Tags.Blocks.ORES);
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.RAW_SAPPHIRE_BLOCK.get()).addTag(Tags.Blocks.ORES);
+                .add(ModBlocks.RAW_SAPPHIRE_BLOCK.get(),ModBlocks.SAPPHIRE_STAIRS.get(),
+                        ModBlocks.SAPPHIRE_SLAB.get()).addTag(Tags.Blocks.ORES);
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .addTag(Tags.Blocks.ORES);
     }

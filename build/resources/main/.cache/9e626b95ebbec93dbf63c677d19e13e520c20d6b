@@ -1,6 +1,6 @@
-// 1.20.1	2023-08-10T18:15:58.5387651	Tags for minecraft:block mod id tutorialmod
-61501b36386f767ff74b3092cbbff90894ce7186 data/minecraft/tags/blocks/mineable/pickaxe.json
-23f54707b8e7079ffad59e9ba295f8077c20847b data/minecraft/tags/blocks/needs_diamond_tool.json
+// 1.20.1	2023-08-12T15:50:52.4642678	Tags for minecraft:block mod id tutorialmod
+5de2ea5d0465214169e65b4218f8d735cfe5e842 data/minecraft/tags/blocks/mineable/pickaxe.json
+b245b0c4e539319cc41dacd9561fc4c9dd249d9e data/minecraft/tags/blocks/needs_diamond_tool.json
 031ec7111c8b7c57f798acd0b3605ceb1912498b data/minecraft/tags/blocks/needs_iron_tool.json
 cb28339548a9f5c43f81c4715df14c62d24020ad data/minecraft/tags/blocks/needs_stone_tool.json
 031ec7111c8b7c57f798acd0b3605ceb1912498b data/tutorialmod/tags/blocks/metal_detector_valuables.json
