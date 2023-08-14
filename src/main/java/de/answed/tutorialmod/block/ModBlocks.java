@@ -3,11 +3,14 @@ package de.answed.tutorialmod.block;
 import de.answed.tutorialmod.TutorialMod;
 import de.answed.tutorialmod.block.custom.SoundBlock;
 import de.answed.tutorialmod.item.ModItems;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -37,6 +40,19 @@ public class ModBlocks {
             () -> new StairBlock(() -> ModBlocks.SAPPHIRE_BLOCK.get().defaultBlockState(),BlockBehaviour.Properties.copy(Blocks.GRANITE_STAIRS)));
     public static final RegistryObject<Block> SAPPHIRE_SLAB = registerBlock("sapphire_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE_SLAB)));
+
+    public static final RegistryObject<Block> SAPPHIRE_PRESSURE_PLATE = registerBlock("sapphire_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,BlockBehaviour.Properties.copy(Blocks.GRANITE), BlockSetType.IRON));
+    public static final RegistryObject<Block> SAPPHIRE_BUTTON = registerBlock("sapphire_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE_SLAB), BlockSetType.IRON, 10, true));
+    public static final RegistryObject<Block> SAPPHIRE_FENCE = registerBlock("sapphire_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> SAPPHIRE_FENCE_GATE = registerBlock("sapphire_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    public static final RegistryObject<Block> SAPPHIRE_WALL = registerBlock("sapphire_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+
 
 
 

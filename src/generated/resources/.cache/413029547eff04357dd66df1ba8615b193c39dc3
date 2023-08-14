@@ -1,12 +1,15 @@
-// 1.20.1	2023-08-12T15:54:46.2785092	Block States: tutorialmod
+// 1.20.1	2023-08-14T17:12:35.6564682	Block States: tutorialmod
 2f46112fe9e6610ea4c37e87e511da1849b54274 assets/tutorialmod/blockstates/raw_sapphire_block.json
 d02d1f6c412fc7b220ed18e30956d68f9a29bbb3 assets/tutorialmod/blockstates/sapphire_block.json
+70b8dc38442f9b57d24a192f9f33ae184e440f1d assets/tutorialmod/blockstates/sapphire_button.json
 e3d9b9d4b3a785fcfdd6646f329ce762f8520c37 assets/tutorialmod/blockstates/sapphire_ore.json
 c0911372696bafd0e2670d6e92d99524df11bfb7 assets/tutorialmod/blockstates/sapphire_slab.json
 f0189f740d5f66bdbf03bf833b7f89a0439615f8 assets/tutorialmod/blockstates/sapphire_stairs.json
 7e439f9c39ea91be588ddc78cf4cd903b5b9cb70 assets/tutorialmod/blockstates/sound_block.json
 44cf187b6c956a3e79927dd84615b47b1bfe4ff0 assets/tutorialmod/models/block/raw_sapphire_block.json
 7fbf9623622901217c1f548068b550115551eb45 assets/tutorialmod/models/block/sapphire_block.json
+30598644a76a45a2883a5b1dca9e271d809081b9 assets/tutorialmod/models/block/sapphire_button.json
+94b23b08013d2fba4a9689aea215619392e9ef30 assets/tutorialmod/models/block/sapphire_button_pressed.json
 65477d5c46d26ec0650e6174b13620632f946e57 assets/tutorialmod/models/block/sapphire_ore.json
 f46cc5512a3627e87e771348623daaac291e8d85 assets/tutorialmod/models/block/sapphire_slab.json
 237f87ceb4f86825699efc2fa4cdf55ab1183c93 assets/tutorialmod/models/block/sapphire_slab_top.json
@@ -17,6 +20,7 @@ dac8730911a1737e4cdd2e70cfc8d32b0b0ba457 assets/tutorialmod/models/block/sound_b
 a7f864f8f8c67b25b34627c0dd8357e96b5d5c79 assets/tutorialmod/models/item/raw_sapphire_block.json
 2bf7f614770184be679bb0313dc04832b7fdd577 assets/tutorialmod/models/item/sapphire_block.json
 9607e08401cad098096f2d09cf41f23d6af6217a assets/tutorialmod/models/item/sapphire_ore.json
+8adde596706bbd0111ed7a881fbf16718ca981ec assets/tutorialmod/models/item/sapphire_pressure_plate.json
 0248b67e69dc9ca7628b13de19dc4e8b21e625a7 assets/tutorialmod/models/item/sapphire_slab.json
 e9aa9e3feee2e040f2908d291e5fa066bb7904c6 assets/tutorialmod/models/item/sapphire_stairs.json
 e1bcffd5dcbfb758a3668455d04d23c6efda02cf assets/tutorialmod/models/item/sound_block.json

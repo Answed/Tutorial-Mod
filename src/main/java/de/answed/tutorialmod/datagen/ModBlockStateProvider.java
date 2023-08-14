@@ -3,9 +3,7 @@ package de.answed.tutorialmod.datagen;
 import de.answed.tutorialmod.TutorialMod;
 import de.answed.tutorialmod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -28,8 +26,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairsBlock((StairBlock) ModBlocks.SAPPHIRE_STAIRS.get(), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
         slabBlock((SlabBlock) ModBlocks.SAPPHIRE_SLAB.get(), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()),blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()) );
 
+        buttonBlock((ButtonBlock) ModBlocks.SAPPHIRE_BUTTON.get(), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
+        pressurePlateBlock((PressurePlateBlock) ModBlocks.SAPPHIRE_PRESSURE_PLATE.get(), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
+
         blockItem(ModBlocks.SAPPHIRE_STAIRS);
         blockItem(ModBlocks.SAPPHIRE_SLAB);
+        blockItem(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject){
