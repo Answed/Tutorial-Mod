@@ -32,12 +32,19 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceGateBlock((FenceGateBlock) ModBlocks.SAPPHIRE_FENCE_GATE.get(), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
         wallBlock((WallBlock) ModBlocks.SAPPHIRE_WALL.get(), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
 
+        doorBlockWithRenderType((DoorBlock) ModBlocks.SAPPHIRE_DOOR.get(), modLoc("block/alexandrite_door_bottom"), modLoc("block/alexandrite_door_top"), "cutout");
+        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.SAPPHIRE_TRAPDOOR.get(), modLoc("block/alexandrite_trapdoor"), true, "cutout");
+
         blockItem(ModBlocks.SAPPHIRE_STAIRS);
         blockItem(ModBlocks.SAPPHIRE_SLAB);
         blockItem(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
         blockItem(ModBlocks.SAPPHIRE_FENCE_GATE);
+        blockItem(ModBlocks.SAPPHIRE_TRAPDOOR, "_bottom");
     }
 
+    private void blockItem(RegistryObject<Block> blockRegistryObject, String appendix){
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("tutorialmod:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath() + appendix));
+    }
     private void blockItem(RegistryObject<Block> blockRegistryObject){
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("tutorialmod:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }
