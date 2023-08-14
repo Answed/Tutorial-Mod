@@ -19,7 +19,9 @@
   "block.tutorialmod.sapphire_slabs": "Sapphire Slabs",
   "block.tutorialmod.sapphire_button": "Sapphire Button",
   "block.tutorialmod.sapphire_pressure_plate": "Sapphire Pressure Plate",
-  "block.tutorialmod.sapphire_slabs": "Sapphire Ore",
+  "block.tutorialmod.sapphire_fence": "Sapphire Fence",
+  "block.tutorialmod.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.tutorialmod.sapphire_wall": "Sapphire Wall",
 
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab",
 

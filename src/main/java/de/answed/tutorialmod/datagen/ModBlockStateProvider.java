@@ -28,10 +28,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         buttonBlock((ButtonBlock) ModBlocks.SAPPHIRE_BUTTON.get(), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
         pressurePlateBlock((PressurePlateBlock) ModBlocks.SAPPHIRE_PRESSURE_PLATE.get(), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
+        fenceBlock((FenceBlock) ModBlocks.SAPPHIRE_FENCE.get(), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
+        fenceGateBlock((FenceGateBlock) ModBlocks.SAPPHIRE_FENCE_GATE.get(), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
+        wallBlock((WallBlock) ModBlocks.SAPPHIRE_WALL.get(), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
 
         blockItem(ModBlocks.SAPPHIRE_STAIRS);
         blockItem(ModBlocks.SAPPHIRE_SLAB);
         blockItem(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
+        blockItem(ModBlocks.SAPPHIRE_FENCE_GATE);
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject){
