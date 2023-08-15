@@ -28,6 +28,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.SAPPHIRE_BLOCK.get(),
                         ModBlocks.RAW_SAPPHIRE_BLOCK.get(), ModBlocks.SOUND_BLOCK.get(),
                         ModBlocks.SAPPHIRE_STAIRS.get(), ModBlocks.SAPPHIRE_SLAB.get());
+        this.tag(ModTags.Blocks.PAXEL_MINABLE)
+                .addTags(BlockTags.MINEABLE_WITH_PICKAXE,
+                        BlockTags.MINEABLE_WITH_AXE, BlockTags.MINEABLE_WITH_SHOVEL);
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
