@@ -29,6 +29,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.ALEXANDRITE_SHOVEL.get());
                         pOutput.accept(ModItems.ALEXANDRITE_HOE.get());
                         pOutput.accept(ModItems.ALEXANDRITE_PAXEL.get());
+                        pOutput.accept(ModItems.ALEXANDRITE_HAMMER.get());
+
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
@@ -42,6 +44,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.SAPPHIRE_WALL.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_DOOR.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
+                        pOutput.accept(ModItems.ALEXANDRITE_HAMMER.get());
                     })
                     .build());
 

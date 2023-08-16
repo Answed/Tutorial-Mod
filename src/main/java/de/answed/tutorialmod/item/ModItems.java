@@ -1,10 +1,7 @@
 package de.answed.tutorialmod.item;
 
 import de.answed.tutorialmod.TutorialMod;
-import de.answed.tutorialmod.item.custom.BigAssSword;
-import de.answed.tutorialmod.item.custom.FuelItem;
-import de.answed.tutorialmod.item.custom.MetalDetectorItem;
-import de.answed.tutorialmod.item.custom.PaxelItem;
+import de.answed.tutorialmod.item.custom.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -42,6 +39,8 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.ALEXANDRITE,2,3  ,new Item.Properties().durability(256)));
     public static final RegistryObject<Item> ALEXANDRITE_PAXEL = ITEMS.register("alexandrite_paxel",
             () -> new PaxelItem(ModToolTiers.ALEXANDRITE,2,3  ,new Item.Properties().durability(256)));
+    public static final RegistryObject<Item> ALEXANDRITE_HAMMER = ITEMS.register("alexandrite_hammer",
+            () -> new HammerItem(ModToolTiers.ALEXANDRITE,2,3  ,new Item.Properties().durability(256)));
 
 
     public static void register(IEventBus eventBus){
