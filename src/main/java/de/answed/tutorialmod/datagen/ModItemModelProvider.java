@@ -36,11 +36,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PINE_CONE);
         simpleItem(ModItems.STRAWBERRY);
 
-        simpleItem(ModItems.ALEXANDRITE_HELMET);
-        simpleItem(ModItems.ALEXANDRITE_CHESTPLATE);
-        simpleItem(ModItems.ALEXANDRITE_LEGGINGS);
-        simpleItem(ModItems.ALEXANDRITE_BOOTS);
-
         buttonItem(ModBlocks.SAPPHIRE_BUTTON, ModBlocks.SAPPHIRE_BLOCK);
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);
         wallItem(ModBlocks.SAPPHIRE_WALL, ModBlocks.SAPPHIRE_BLOCK);
