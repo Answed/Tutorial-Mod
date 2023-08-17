@@ -30,6 +30,10 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.ALEXANDRITE_HOE.get());
                         pOutput.accept(ModItems.ALEXANDRITE_PAXEL.get());
                         pOutput.accept(ModItems.ALEXANDRITE_HAMMER.get());
+                        pOutput.accept(ModItems.ALEXANDRITE_HELMET.get());
+                        pOutput.accept(ModItems.ALEXANDRITE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.ALEXANDRITE_LEGGINGS.get());
+                        pOutput.accept(ModItems.ALEXANDRITE_BOOTS.get());
 
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
