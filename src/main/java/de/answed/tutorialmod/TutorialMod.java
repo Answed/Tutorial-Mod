@@ -2,6 +2,7 @@ package de.answed.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import de.answed.tutorialmod.block.ModBlocks;
+import de.answed.tutorialmod.enchantment.ModEnchantments;
 import de.answed.tutorialmod.item.ModCreativeModTabs;
 import de.answed.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -34,6 +35,7 @@ public class TutorialMod
         //Ensures that the Items are actually added to the game
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEnchantments.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
