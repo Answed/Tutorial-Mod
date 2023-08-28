@@ -2,6 +2,7 @@ package de.answed.tutorialmod.item;
 
 import de.answed.tutorialmod.TutorialMod;
 import de.answed.tutorialmod.item.custom.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -49,6 +50,8 @@ public class ModItems {
             () -> new ModArmorItem(ModArmorMaterials.ALEXANDRITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> ALEXANDRITE_BOOTS = ITEMS.register("alexandrite_boots",
             () -> new ModArmorItem(ModArmorMaterials.ALEXANDRITE, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> ALEXANDRITE_HORSE_ARMOR = ITEMS.register("alexandrite_horse_armor",
+            () -> new HorseArmorItem(12, new ResourceLocation(TutorialMod.MODID, "textures/entity/horse/armor/horse_armor_alexandrite.png"), new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){

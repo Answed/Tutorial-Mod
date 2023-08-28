@@ -36,6 +36,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PINE_CONE);
         simpleItem(ModItems.STRAWBERRY);
 
+        simpleItem(ModItems.ALEXANDRITE_HORSE_ARMOR);
+
         simpleItem(ModItems.ALEXANDRITE_HELMET);
         simpleItem(ModItems.ALEXANDRITE_CHESTPLATE);
         simpleItem(ModItems.ALEXANDRITE_LEGGINGS);
