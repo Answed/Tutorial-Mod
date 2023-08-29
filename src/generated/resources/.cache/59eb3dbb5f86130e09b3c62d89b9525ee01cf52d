@@ -1,4 +1,5 @@
-// 1.20.1	2023-08-14T17:47:45.6158929	Loot Tables
+// 1.20.1	2023-08-29T14:58:53.2290701	Loot Tables
+9b142ec7dde2e594526b33e4e4d588fb16fecbf4 data/tutorialmod/loot_tables/blocks/alexandrite_lamp.json
 81e9322ae4c5141fd110a8f87cc92d7af008fd1e data/tutorialmod/loot_tables/blocks/raw_sapphire_block.json
 d844cbb192590a5e4278fd1a5c5906e40c594e24 data/tutorialmod/loot_tables/blocks/sapphire_block.json
 9f5a63f9e0753091ae43e39315eba445f05571cd data/tutorialmod/loot_tables/blocks/sapphire_button.json

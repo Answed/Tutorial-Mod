@@ -2,9 +2,12 @@ package de.answed.tutorialmod.datagen;
 
 import de.answed.tutorialmod.TutorialMod;
 import de.answed.tutorialmod.block.ModBlocks;
+import de.answed.tutorialmod.block.custom.AlexandriteLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -40,6 +43,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
         blockItem(ModBlocks.SAPPHIRE_FENCE_GATE);
         blockItem(ModBlocks.SAPPHIRE_TRAPDOOR, "_bottom");
+
+        customLamp();
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.ALEXANDRITE_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(AlexandriteLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("alexandrite_lamp_on",
+                        new ResourceLocation(TutorialMod.MODID, "block/" + "alexandrite_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("alexandrite_lamp_off",
+                        new ResourceLocation(TutorialMod.MODID, "block/" +"alexandrite_lamp_off")))};
+            }
+        });
+        simpleBlockItem(ModBlocks.ALEXANDRITE_LAMP.get(), models().cubeAll("alexandrite_lamp_on",
+                new ResourceLocation(TutorialMod.MODID, "block/" +"alexandrite_lamp_on")));
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject, String appendix){

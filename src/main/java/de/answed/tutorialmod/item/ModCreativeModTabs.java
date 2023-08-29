@@ -49,6 +49,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.SAPPHIRE_WALL.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_DOOR.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.ALEXANDRITE_LAMP.get());
                         pOutput.accept(ModItems.ALEXANDRITE_HAMMER.get());
                     })
                     .build());
