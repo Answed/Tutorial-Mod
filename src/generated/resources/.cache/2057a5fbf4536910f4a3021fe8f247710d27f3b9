@@ -1,4 +1,4 @@
-// 1.20.1	2023-08-28T15:29:04.3649924	Item Models: tutorialmod
+// 1.20.1	2023-08-30T14:44:54.0869152	Item Models: tutorialmod
 073373f3fe2f1164adae1d7cdcb2e21c2c4c821e assets/tutorialmod/models/item/alexandrite_axe.json
 dbc6043dafac493faeb425d1792f2a0f30b9eae6 assets/tutorialmod/models/item/alexandrite_boots.json
 a93c28a5f0b4e6a5e5f264897abd22d05c1a0848 assets/tutorialmod/models/item/alexandrite_chestplate.json
@@ -11,6 +11,7 @@ a00407499d97b4fcfa88283b61361fe8ac9ca337 assets/tutorialmod/models/item/alexandr
 5d16f7d8001900edd947a850e8efae4885b81f53 assets/tutorialmod/models/item/alexandrite_pickaxe.json
 07de41c754387a15eab20f705cd497ebb16a49d1 assets/tutorialmod/models/item/alexandrite_shovel.json
 15af02b8f5508754ed55d5f952c1d6d7259d325c assets/tutorialmod/models/item/alexandrite_sword.json
+1365fd46e0dbdb8475ba82755d1fceee99313bbc assets/tutorialmod/models/item/data_tablet.json
 93719e53df04c62d91023fe733206eb93b7aac86 assets/tutorialmod/models/item/metal_detector.json
 d56de8e6898d1c12a15eca045badafe1947aa387 assets/tutorialmod/models/item/pine_cone.json
 d24305376f58c1ef118279a5c8f5b087a07b1d47 assets/tutorialmod/models/item/raw_sapphire.json
