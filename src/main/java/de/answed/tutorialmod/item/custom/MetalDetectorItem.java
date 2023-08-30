@@ -1,8 +1,11 @@
 package de.answed.tutorialmod.item.custom;
 
+import de.answed.tutorialmod.item.ModItems;
+import de.answed.tutorialmod.util.InventoryUtil;
 import de.answed.tutorialmod.util.ModTags;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -36,6 +39,11 @@ public class MetalDetectorItem extends Item{
                 if(isValuableBlock(state)){
                     outputValuableCoordinates(positionClicked.below(i), player, state.getBlock());
                     foundBlock = true;
+
+                    if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET.get())){
+                        addDataToDataTablet(player, positionClicked.below(i), state.getBlock());
+                    }
+
                     break;
                 }
             }
@@ -49,6 +57,16 @@ public class MetalDetectorItem extends Item{
                 player -> player.broadcastBreakEvent(player.getUsedItemHand()));
 
         return InteractionResult.SUCCESS;
+    }
+
+    private void addDataToDataTablet(Player player, BlockPos blockPos, Block block) {
+        ItemStack dataTablet = player.getInventory().getItem(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET.get()));
+
+        CompoundTag data = new CompoundTag();
+        data.putString("tutorialmod.found_ore", "Found " + I18n.get(block.getDescriptionId()) + " at ("
+                + blockPos.getX() + ", " + blockPos.getY() + ", " + blockPos.getZ() +")");
+
+        dataTablet.setTag(data);
     }
 
     @Override
