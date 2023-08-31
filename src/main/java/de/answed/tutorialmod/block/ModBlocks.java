@@ -2,6 +2,7 @@ package de.answed.tutorialmod.block;
 
 import de.answed.tutorialmod.TutorialMod;
 import de.answed.tutorialmod.block.custom.AlexandriteLampBlock;
+import de.answed.tutorialmod.block.custom.KohlrabiCropBlock;
 import de.answed.tutorialmod.block.custom.SoundBlock;
 import de.answed.tutorialmod.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
@@ -61,6 +62,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALEXANDRITE_LAMP = registerBlock("alexandrite_lamp",
             () -> new AlexandriteLampBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).sound(SoundType.GLASS)
                     .lightLevel(state -> state.getValue(AlexandriteLampBlock.CLICKED) ? 16 : 0)));
+
+    public static final RegistryObject<Block> KOHLRABI_CROP= BLOCKS.register("kohlrabi_crop",
+            () -> new KohlrabiCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));
 
     private static <T extends  Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
