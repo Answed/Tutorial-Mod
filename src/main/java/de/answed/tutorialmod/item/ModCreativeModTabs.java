@@ -36,6 +36,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.ALEXANDRITE_BOOTS.get());
                         pOutput.accept(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
                         pOutput.accept(ModItems.DATA_TABLET.get());
+                        pOutput.accept(ModItems.KOHLRABI_SEEDS.get());
 
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());

@@ -1,5 +1,6 @@
 package de.answed.tutorialmod.block.custom;
 
+import de.answed.tutorialmod.item.ModItems;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
@@ -17,11 +18,11 @@ public class KohlrabiCropBlock  extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return super.getBaseSeedId();
+        return ModItems.KOHLRABI_SEEDS.get();
     }
 
     @Override
-    protected IntegerProperty getAgeProperty() {
+    public IntegerProperty getAgeProperty() {
         return AGE;
     }
 

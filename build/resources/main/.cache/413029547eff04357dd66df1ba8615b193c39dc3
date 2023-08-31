@@ -1,5 +1,6 @@
-// 1.20.1	2023-08-29T14:58:53.2300701	Block States: tutorialmod
+// 1.20.1	2023-08-31T15:13:21.7946772	Block States: tutorialmod
 e7622dc69814349a77dcb302438d8d28ecdd9e06 assets/tutorialmod/blockstates/alexandrite_lamp.json
+77ac16575a8322696548c73950fa9dccf004c74e assets/tutorialmod/blockstates/kohlrabi_crop.json
 2f46112fe9e6610ea4c37e87e511da1849b54274 assets/tutorialmod/blockstates/raw_sapphire_block.json
 d02d1f6c412fc7b220ed18e30956d68f9a29bbb3 assets/tutorialmod/blockstates/sapphire_block.json
 70b8dc38442f9b57d24a192f9f33ae184e440f1d assets/tutorialmod/blockstates/sapphire_button.json
@@ -15,6 +16,13 @@ f0189f740d5f66bdbf03bf833b7f89a0439615f8 assets/tutorialmod/blockstates/sapphire
 7e439f9c39ea91be588ddc78cf4cd903b5b9cb70 assets/tutorialmod/blockstates/sound_block.json
 a9d3d377b8d3f29f8441e5664f1e7c028756e9ef assets/tutorialmod/models/block/alexandrite_lamp_off.json
 af1c4a0b4915b928710ed824aec0e6959946bd4a assets/tutorialmod/models/block/alexandrite_lamp_on.json
+52f8436a98d3c6087cdfbde66ac9580ded3b49b2 assets/tutorialmod/models/block/kohlrabi_stage0.json
+09c37d5854eca75592e4af3dfc467a4c3c936fcd assets/tutorialmod/models/block/kohlrabi_stage1.json
+2eb21b55ee5dd88aadde11bb338a803bdf2935cc assets/tutorialmod/models/block/kohlrabi_stage2.json
+f8cc154cb3b0df6d5cde93be445146eac82c3afc assets/tutorialmod/models/block/kohlrabi_stage3.json
+ea112102e12c93f34d5949db295987c884d63b17 assets/tutorialmod/models/block/kohlrabi_stage4.json
+a3d11237f27863d14c1347c0979bcdb305e9bd9c assets/tutorialmod/models/block/kohlrabi_stage5.json
+29b5e6616ba3e5f940bb846a5d0281eaca2f5d6b assets/tutorialmod/models/block/kohlrabi_stage6.json
 44cf187b6c956a3e79927dd84615b47b1bfe4ff0 assets/tutorialmod/models/block/raw_sapphire_block.json
 7fbf9623622901217c1f548068b550115551eb45 assets/tutorialmod/models/block/sapphire_block.json
 30598644a76a45a2883a5b1dca9e271d809081b9 assets/tutorialmod/models/block/sapphire_button.json
